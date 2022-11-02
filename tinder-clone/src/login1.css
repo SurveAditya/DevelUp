@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body-login {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+.container {
+  background-color: rgb(0, 0, 0);
+  padding: 60px 100px;
+  align-items: center;
+}
+.shadow-box {
+  background: rgb(17, 22, 66);
+  background: radial-gradient(
+    circle,
+    rgba(17, 22, 66, 1) 18%,
+    rgba(8, 8, 8, 1) 36%,
+    rgba(8, 8, 8, 1) 72%,
+    rgba(1, 0, 1, 1) 100%
+  );
+  width: 1150px;
+  height: 500px;
+  text-align: justify;
+  display: flex;
+}
+.written-part {
+  text-align: justify;
+  padding-top: 120px;
+  padding-left: 90px;
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.form-control-login {
+  width: 100%;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+#submit-login {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  margin-left: 60px;
+}
+button {
+  margin-left: 80px;
+  border-radius: 20px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.input-login {
+  width: 100%;
+  background: #e6e6e6;
+  letter-spacing: 0.5px;
+  padding: 14px 64px;
+}
+
+.input-login ~ i {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  transition: color 0.4s;
+}
+
+.input-login:focus ~ i {
+  color: #12171d;
+}
+.hyperlink-signup {
+  padding-left: 60px;
+}
+
+#submit-login.submit:hover {
+  opacity: 0.9;
+  background-color: white;
+  color: black;
+}
+#submit-login {
+  width: 100px;
+  height: 50px;
+  padding: 5px 20px;
+  padding: 14px 64px;
+  margin: 32px auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  font-size: 16px;
+}
+.forgot-pass {
+  padding-left: 20px;
+}
+.submit {
+  transition: opacity 0.4s;
+  width: 100px;
+  height: 50px;
+  padding: 5px 0px;
+}
+.heading {
+  align-items: center;
+  padding-left: 70px;
+}

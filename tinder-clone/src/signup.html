@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Sign-Up page</title>
+	    <link rel="stylesheet" type="text/css" href="login1.css">
+	    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <div class="shadow-box">
+                <div class="login-content">
+                    
+                        <img src="images/img1.png">
+                </div>
+                <div class="login-content">
+                    <form action="login1.html">
+                    <div class="written-part">
+                        <h1 class="Heading">Sign- UP</h1>
+                        <div class="form-control-login">
+                            <input type="text" placeholder="Email" class="input-login">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        
+                        <div class="form-control-login hyperlink-signup forgot-pass">
+                            <p>Already have an Account? <a href="/Login1.html">Login</a></p>
+                        </div>
+    
+                        <button id="" class="submit">Get Password</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <script>
+            var sideButtons = document.querySelectorAll('.side button');
+            sideButtons.forEach(btn => btn.addEventListener('click', () => {
+                document.body.classList.toggle('signup');
+            }))
+        </script>
+    </body>
+</html>

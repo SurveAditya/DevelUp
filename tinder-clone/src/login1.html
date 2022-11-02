@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>LogIn page</title>
+	    <link rel="stylesheet" type="text/css" href="login1.css">
+	    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <div class="body-login">
+        <div class="container">
+            <div class="shadow-box">
+                <div class="login-content">
+                    
+                        <img src="images/img2.png">
+                </div>
+                <div class="login-content">
+                    <form action="login1.html">
+                    <div class="written-part">
+                        <h1 class="Heading">Log-IN</h1>
+                        <div class="form-control-login">
+                            <input type="text" placeholder="Email" class="input-login">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-control-login">
+                            <input type="password" placeholder="Password" class="input-login">
+                            <i class="fas fa-unlock"></i>
+                        </div>
+                        <div class="form-control-login hyperlink-signup forgot-pass">
+                            <p>Don't have an Account? <a href="/Signup.html">Signup</a></p>
+                        </div>
+    
+                        <button id="" class="submit">Log-In</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <script>
+            var sideButtons = document.querySelectorAll('.side button');
+            sideButtons.forEach(btn => btn.addEventListener('click', () => {
+                document.body.classList.toggle('signup');
+            }))
+        </script>
+    </body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakeBook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_left"></div>
+
+      <div class="navbar_center">
+        <a class="active_icon" href="#">
+          <i class="fas fa-home"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-user-friends"></i>
+        </a>
+        <a href="#">
+          <i class="far fa-play-circle"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-archive"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-users"></i>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_left">
+        <div class="Prof">
+          <img
+            class="Prof"
+            src="data:image/png;base64,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"
+            class="profile-pic"
+          />
+        </div>
+        <ul>
+          <li class="navleftdesc">
+            <a href="#">
+              <img src="" alt="" />
+              <span>name</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#"> <img src="" alt="" /> <span>Saved</span> </a>
+          </li>
+
+          <li>
+            <i class="fas fa-arrow-down"></i>
+            <span class="see_more">See More</span>
+          </li>
+          <div class="border"></div>
+          <h3 class="shortcut_title"></h3>
+          <div class="shortcuts_wrapper"></div>
+        </ul>
+      </div>
+
+      <div class="content_center">
+        <div class="stories">
+          <img src="https://picsum.photos/id/137/110/200" alt="" />
+          <img src="https://picsum.photos/id/247/110/200" alt="" />
+          <img src="https://picsum.photos/id/522/110/200" alt="" />
+          <img src="https://picsum.photos/id/231/110/200" alt="" />
+          <img src="https://picsum.photos/id/537/110/200" alt="" />
+          <img src="https://picsum.photos/id/237/110/200" alt="" />
+        </div>
+        <div class="media_container">
+          <div class="share">
+            <div>
+              <input
+                placeholder="search skills or any keywords"
+                name="search"
+                class="search-field"
+                type="text"
+                id="myInput"
+                onkeyup="myFunction()"
+              />
+            </div>
+            <div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-evenly;
+                  align-items: center;
+                  width: 500px;
+                  margin-top: 50px;
+                  position: relative;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              ></div>
+            </div>
+
+            <ul id="myUL">
+              <li>
+                <div class="flex-box">
+                  <div>
+                    <img
+                      width="300"
+                      height="250"
+                      src="https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600"
+                      alt=""
+                    />
+                  </div>
+                  <a style="visibility: hidden" href="#">py</a>
+                  <div class="flex-content">
+                    <h1>PROJECTS</h1>
+                    <div>NAME</div>
+                    <div>Domain</div>
+                    <div>DESCP</div>
+                    <div>Langs used</div>
+                    <div>
+                      <button class="btn btn-primary" style="margin-top: 20px">
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="flex-box">
+                  <div>
+                    <img
+                      width="300"
+                      height="250"
+                      src="https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600"
+                      alt=""
+                    />
+                  </div>
+                  <a style="visibility: hidden" href="#">React</a>
+                  <div class="flex-content">
+                    <h1>PROJECTS</h1>
+                    <div>NAME</div>
+                    <div>Domain</div>
+                    <div>DESCP</div>
+                    <div>Langs used</div>
+                    <div>
+                      <button class="btn btn-primary" style="margin-top: 20px">
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex-box">
+                  <div>
+                    <img
+                      width="300"
+                      height="250"
+                      src="https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600"
+                      alt=""
+                    />
+                  </div>
+                  <a style="visibility: hidden" href="#">React JS</a>
+                  <div class="flex-content">
+                    <h1>PROJECTS</h1>
+                    <div>NAME</div>
+                    <div>Domain</div>
+                    <div>DESCP</div>
+                    <div>Langs used</div>
+                    <div>
+                      <button class="btn btn-primary" style="margin-top: 20px">
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <script>
+              function myFunction() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                  a = li[i].getElementsByTagName("a")[0];
+                  txtValue = a.textContent || a.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                  } else {
+                    li[i].style.display = "none";
+                  }
+                }
+              }
+            </script>
+            <style>
+              .flex-box {
+                margin-top: 50px;
+                background-color: black;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 800px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                /* border: 2px solid black; */
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+              }
+              .search-field {
+                width: 600px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 50px;
+                border-radius: 20px;
+              }
+              .flex-content {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+              }
+              .hamburger {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 30px;
+              }
+              .sidebar-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+              }
+              .sidebar-content div {
+                font-size: 20px;
+              }
+              .user-logo {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            </style>
+            <div class="share_downSide">
+              <div class="share_downSide_link">
+                <span></span>
+              </div>
+              <div class="share_downSide_link">
+                <span></span>
+              </div>
+              <div class="share_downSide_link">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="news_feed">
+            <div class="news_feed_title">
+              <img src="" alt="" />
+              <div class="news_feed_title_content">
+                <p></p>
+                <span> <i class="fas fa-globe-americas"></i></span>
+              </div>
+            </div>
+            <div class="news_feed_description">
+              <p class="news_feed_subtitle"></p>
+              <img src="" alt="" />
+              <div class="news_feed_description_title">
+                <span></span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_right">
+        <div class="content_right_inner">
+          <div class="your_pages">
+            <h3>Hiring</h3>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+
+          <div>
+            <button class="btn btn-primary">Increase community</button>
+          </div>
+          <div>
+            <button class="btn btn-primary" id="buttonhire">Hire devs</button>
+          </div>
+          <ul>
+            <li></li>
+          </ul>
+          <div class="content_right_divider"></div>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="" alt="" />
+                <span>hiring status</span>
+              </a>
+            </li>
+          </ul>
+          <div class="content_right_divider"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.promo {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.promo__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: white;
+}
+.promo__card-left {
+  margin: 0 auto;
+  padding-top: 43px;
+  width: 400px;
+  text-align: center;
+  background-color: #f4ece6;
+  -webkit-box-shadow: black 1px 10px 100px -40px;
+  box-shadow: black 1px 10px 100px -40px;
+}
+.promo__card-right {
+  margin: 0 auto;
+  padding-top: 34px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 480px;
+  background-color: #fff;
+}
+.promo__img {
+  width: 205px;
+  height: 205px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0 auto 34px auto;
+}
+.promo__img img {
+  width: 100%;
+}
+.promo__name {
+  font-weight: 700;
+  font-size: 27px;
+  color: white;
+}
+.promo__underline {
+  width: 50px;
+  height: 3px;
+  background: #7802ff;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.promo__job {
+  margin-top: 25px;
+  letter-spacing: 0.25rem;
+  font-weight: 300;
+}
+.promo__social {
+  margin-top: 51px;
+  padding: 14px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #fff;
+  list-style-type: none;
+}
+.promo__social li {
+  font-size: 20px;
+}
+.promo__social li a {
+  color: rgb(255, 255, 255);
+}
+.promo__title {
+  font-size: 100px;
+  font-weight: 700;
+}
+.promo__subtitle {
+  font-size: 25px;
+}
+.promo__descr {
+  margin-top: 56px;
+  line-height: 1.5em;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.651);
+  color: white;
+  padding: 6px 5px 6px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.button {
+  width: 130px;
+  height: 35px;
+  background: none;
+  border-radius: 24px;
+  border: 0.12rem solid black;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 38px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #7802ff;
+  color: #fff;
+  border: 0.12rem solid #7802ff;
+}
+.button_active {
+  background-color: #7802ff;
+  border: 0.12rem solid #7802ff;
+  color: #fff;
+}
+.button_active:hover {
+  background-color: #fff;
+  border: 0.12rem solid #7802ff;
+  color: black !important;
+}
+@media (max-width: 800px) {
+  .promo__card {
+    margin-top: 200px;
+  }
+  .promo__card-right {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=style.min.css.map */
+
+.promo {
+  height: 100%;
+  /* background-color: #f7bd90; */
+  border-width: 2px black;
+}
+
+.promo__card {
+  height: 100%;
+  box-shadow: 5px black;
+  border-width: 2px black;
+}
+
+.promo__underline {
+  background-color: #000;
+}
+
+.medialinks {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.promo__title {
+  font-size: 60px;
+  color: #000;
+}
+
+.promo__name {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 40px;
+  font-weight: lighter;
+}
+
+.techstack {
+  display: grid;
+}
+#resume-btn {
+  position: relative;
+  right: 80px;
+}
+.promo__card-left {
+  background-color: #102f85a8;
+  box-shadow: 5px black;
+  width: 500px;
+}
+
+.promo__card-right {
+  box-shadow: 5px black;
+  /* height: 900px; */
+  /* background-color: #59caec; */
+  box-shadow: none;
+}
+
+.button_active {
+  background-color: #000;
+  border: 1px black;
+}
+
+.button_active:hover {
+  border-width: 2px #b9efff;
+}
+
+.projecttitle {
+  font-size: 30px;
+  text-align: center;
+}
+
+.projectdesc {
+  font-size: 15px;
+  text-align: left;
+}
